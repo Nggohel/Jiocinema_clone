@@ -1,0 +1,99 @@
+.loginpagelayout{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.parentcard{
+    position: absolute;
+    right: -25vw;
+    height: 90vh;
+    width: 25vw;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.carddiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.carddiv .img{
+    position: absolute;
+    border: 1px solid white;
+    top: 13px;
+    z-index: 1;
+}
+.subcard{
+    margin-top: 50px;
+    font-weight:700;
+    color: white;
+    background-color: rgb(84, 83, 83);
+    text-align: center;
+}
+.title{
+    margin-top: 25px;
+}
+.button{
+    border: none;
+    background-color:rgb(217, 0, 141);
+    font-weight:700;
+    border-radius: 18px;
+    padding: 0px 15px;
+}
+.innercard{ 
+    background-color: transparent; 
+    color: inherit;
+    font-family: "JioType Var";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    min-height: 48px;
+    padding: 5px 1px;
+    box-sizing: border-box;
+    white-space: nowrap;    
+}
+.cardspan{
+    margin-left: 20px;
+}
+.solid {
+    border-top: 1.5px solid wheat;
+}
+h6{
+    margin-top: 5px;
+    margin-left: 17px;
+    color: white;
+    text-align: start;
+}
+
+.footer{
+    margin-top: 150px;
+      color: white;
+      margin-left: 17px;
+}
+.underline-pink {
+    margin-left: 17px;
+    text-decoration: underline;
+    color:rgb(217, 0, 141);
+    text-align: start;
+}
+.text{
+    font-size: 10px;
+}
+@keyframes move {
+    from{
+        right: -25vw;
+    }
+    to{
+      right: 0;
+    }
+    
+}

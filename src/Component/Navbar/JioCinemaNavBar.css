@@ -1,0 +1,106 @@
+.mainnav{
+    background-color: black;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-left: 20px;
+
+}
+
+.navjiocinema{
+    color: white;
+    font-weight: 750;
+    font-size: 18px;
+}
+.navsubcribe{
+    position: relative;
+    color:rgb(193, 163, 98);
+    border: 2px solid rgb(193, 163, 98);
+    border-radius: 17px;
+    font-size: 12px;
+    width: 96px;
+    font-weight: 700;
+    margin-top: 9px;
+    padding: 0;
+    height: 24px;
+    margin-left: 18px;    
+}
+.subcribe{
+    color:rgb(193, 163, 98);
+    text-align: center;
+}
+.subcribe::before{
+content: "";
+position: absolute;
+  width: 12px;
+  height: 3px;
+  left: 60px;
+  top: -2.5px;
+  border-radius: 80%;
+  filter: blur(1px);
+  background: rgb(255, 255, 255);
+}
+.subcribe::after{
+content: "";
+  position: absolute;
+  top: -2px;
+  width: 40px;
+  height: 2px;
+  left: 44px;
+  border-radius: 30%;
+  background: linear-gradient(90deg, rgba(210, 196, 170, 0) 0%, rgb(255, 252, 244) 50.49%, rgba(226, 226, 226, 0) 100%);
+}
+.navforyou{
+    color: white;
+    border: 1.5px solid rgb(249,249, 249);
+    border-radius: 28px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 11px;
+}
+.sport{
+    color: white;
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.movies{
+    color: white;
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.news{
+    color: white;
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.searchbar{
+    width: 250px;
+    border: 1px solid gray;
+    background-color:black;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+   
+
+}
+.searchbar::placeholder{
+    color: lightgray;
+}
+.avtar{
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right:60px;   
+    cursor: pointer;
+}
+.loginpage{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+/* api call  */
+  

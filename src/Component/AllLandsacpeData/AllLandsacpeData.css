@@ -1,0 +1,39 @@
+.alllandscape-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.alllandscape-button{
+    background-color: black;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: 8px;
+}
+.alllandscape-icon{
+    height: 24px;
+    width: 24px;
+}
+.alllandscape-card{
+   
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px 0px;
+    row-gap: 15px;
+
+}
+.alllandscape-data{
+    margin-left: 22px;
+}
+.alllandscape-img{
+    height: 8rem;
+    width: 14rem;
+    border-radius: 10px;
+}
+
+.alllandscape-name{
+    font-weight: 750;
+    color: white;    
+}

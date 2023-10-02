@@ -1,0 +1,42 @@
+
+.carouselimg{
+    height:60vh;
+    width: 100vw;     
+    /* filter: contrast(300%) brightness(90%); */
+ 
+}
+.carousel-control-prev-icon{
+    color: aqua;
+    background-color:darkgray;
+    border-radius: 50%;
+    padding: 4px;
+   
+}
+
+.carousel-control-next-icon{
+    color: aqua;
+    background-color:darkgray;
+    /* border: 1px solid ; */
+    border-radius: 50%;
+    padding: 4px;
+}
+h3{
+    color:white;
+    font-Weight: 800;
+   text-align: start;
+    
+}
+p{
+    font-size: 12px;
+    font-weight:600;
+    color: rgb(122, 121, 121);
+    text-align: start;
+}
+.watchbutton{
+    border: none;
+    background-color:rgb(217, 0, 141);
+    font-weight:700;
+    border-radius: 5px;
+    padding:10px 15px;
+    font-size: 13px;
+}

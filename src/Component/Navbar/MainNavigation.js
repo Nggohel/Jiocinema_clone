@@ -1,0 +1,33 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import JioCinemaNavBar from "./JioCinemaNavBar";
+import HomePage from "./Pages/HomePage";
+import SubscribePage from "./Pages/SubscribePage";
+import SportPage from "./Pages/SportPage";
+import MoviesPage from "./Pages/MoviesPage";
+import NewsPage from "./Pages/NewsPage";
+import PotraitCard from "../AllPotraitData/PotraitCard";
+import LandscapeCard from "../AllLandsacpeData/LandscapeCard";
+
+function MainNavigation() {
+  return (
+    <>
+      <Router>
+        <JioCinemaNavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/subscribe" element={<SubscribePage />} />
+          <Route path="/foryou" element={<HomePage />} />
+          <Route path="/sport" element={<SportPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/Moredatapotrait" element={<PotraitCard />} />
+          <Route path="/backtohome" element={<HomePage />} />
+          <Route path="/Moredatalandscape" element={<LandscapeCard />} />
+          <Route path="/back" element={<HomePage />} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
+export default MainNavigation;
