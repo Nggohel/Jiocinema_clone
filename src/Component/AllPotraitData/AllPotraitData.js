@@ -4,7 +4,7 @@ import "./AllPotraitData.css";
 
 function AllPotraitData() {
   const [data, setData] = useState([]);
-  const filterType = "video song";
+  const filterType = "movie";
 
   useEffect(() => {
     async function fetchData() {
@@ -53,7 +53,7 @@ function AllPotraitData() {
             </div>
           ))
         ) : (
-          <h2>Loading...</h2>
+          <h2 style={{ color: "white" }}>Loading....</h2>
         )}
       </div>
     </>
@@ -61,3 +61,10 @@ function AllPotraitData() {
 }
 
 export default AllPotraitData;
+// web series
+// tv show
+// video song
+// short film
+// movie
+// trailer
+// documentary

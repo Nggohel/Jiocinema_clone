@@ -1,7 +1,7 @@
 import React from "react";
 import CarouselCard from "../../Carousel/Carousel";
 import PotraitCarousel from "../../PotraitCarousel/PotraitCarousel";
-function NewsPage() {
+function TvshowPage() {
   return (
     <>
       <CarouselCard />
@@ -9,4 +9,4 @@ function NewsPage() {
     </>
   );
 }
-export default NewsPage;
+export default TvshowPage;

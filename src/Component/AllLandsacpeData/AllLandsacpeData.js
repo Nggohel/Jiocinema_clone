@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import "./AllLandsacpeData.css";
 function AllLandscapeData() {
   const [data, setData] = useState([]);
+  const filterType = "documentary";
+
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://academics.newtonschool.co/api/v1/ott/show?limit=100",
+          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=20`,
           {
             method: "GET",
             headers: {
@@ -36,17 +38,21 @@ function AllLandscapeData() {
       </div>
 
       <div className="alllandscape-card">
-        {data.map((item, index) => (
-          <div className="alllandscape-data" key={index}>
-            <a>
-              <img
-                className="alllandscape-img"
-                src={item.thumbnail}
-                alt={`Image ${index}`}
-              />
-            </a>
-          </div>
-        ))}
+        {data.length > 0 ? (
+          data.map((item, index) => (
+            <div className="alllandscape-data" key={index}>
+              <a>
+                <img
+                  className="alllandscape-img"
+                  src={item.thumbnail}
+                  alt={`Image ${index}`}
+                />
+              </a>
+            </div>
+          ))
+        ) : (
+          <h2 style={{ color: "white" }}>Loading....</h2>
+        )}
       </div>
     </>
   );

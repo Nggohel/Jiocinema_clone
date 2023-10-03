@@ -1,8 +1,11 @@
+import React from "react";
+import CarouselCard from "../../Carousel/Carousel";
+import PotraitCarousel from "../../PotraitCarousel/PotraitCarousel";
 function MoviesPage() {
   return (
     <>
-      <h1>This MoviesPage Page</h1>
-      <h1>This MoviesPage Page</h1>
+      <CarouselCard />
+      <PotraitCarousel />
     </>
   );
 }

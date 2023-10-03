@@ -1,0 +1,40 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.login-button{
+    background-color: black;
+    border: none;
+}
+.login-button-image{
+background-color: black;
+height: 25px;
+width: 23px;
+transform: rotate(90deg);
+margin-right: 10px;
+}
+.login-number{
+    font-size: 15px;
+    
+}
+.login-number-input{
+   background-color: black;
+   border: none;
+   color: darkgray;
+   border-bottom: 2px solid rgb(232, 66, 121) ;
+   width: 30%;
+}
+
+.login-continue-btn{
+    background-color:rgb(232, 66, 121);
+    color: white;
+    width: 30%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.login-para{
+    color: white;
+    font-weight: 400;
+}

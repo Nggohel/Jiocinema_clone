@@ -40,6 +40,9 @@ function JioCinemaNavBar() {
               <Nav.Link as={Link} to="/movies" className="movies">
                 Movies
               </Nav.Link>
+              <Nav.Link as={Link} to="/tvshow" className="tvshow">
+                Tv Shows
+              </Nav.Link>
               <Nav.Link as={Link} to="/news" className="news">
                 News
               </Nav.Link>

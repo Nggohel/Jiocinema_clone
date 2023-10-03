@@ -77,7 +77,12 @@ content: "";
     font-size: 13px;
     font-weight: 700;
 }
-
+.tvshow{
+    color: white;
+    margin-left: 13px;
+    font-size: 13px;
+    font-weight: 700;
+}
 .searchbar{
     width: 250px;
     border: 1px solid gray;

@@ -1,7 +1,9 @@
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import "./LoginPage.css";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
   return (
@@ -19,9 +21,11 @@ function LoginPage() {
           <Card style={{ width: "18rem" }} className="mb-2 subcard">
             <Card.Body>
               <Card.Title className="title">Guest</Card.Title>
-              <Button variant="primary" className="button">
-                Login
-              </Button>
+              <Link to="/login">
+                <Button variant="primary" className="button">
+                  Login
+                </Button>
+              </Link>
               <Card.Body className="innercard">
                 <Image
                   src="images/man.png"

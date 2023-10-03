@@ -1,7 +1,7 @@
 .hotrightnow{
     width: 120%;
 }
-.title{
+.hotrightnow-title{
     color: white;
     text-align:start;
     margin-top: 45px;
@@ -11,7 +11,7 @@
 }
 .carousel .hotrightnowimg{
     
-    margin: 0;
+    margin: 0px 50px;
     height: 274px;
     width: 274px;
     border: 1px solid black;
@@ -22,7 +22,7 @@
 .carousel .hotrightnowimg img{
     object-fit: cover;
 }
-.control-dots{
+.control-dots .hotrightnow{
     display: none;
 }
 .slide{
@@ -31,6 +31,7 @@
 
 .hotrightnow .carousel.carousel-slider{
     margin-left: -240px;
+    
 }
 .hotrightnow .carousel .control-prev.control-arrow {
     margin-left: 235px;
