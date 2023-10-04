@@ -1,5 +1,5 @@
 .portraitcarousel{
-    width: 150%;
+    width: 143%;
 }
 .potraittitle{
     color: white;
@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 .potraitsimg{
-    height:227px;
+    height:18rem;
     width: 185px;
     margin-bottom: 10px;
 
@@ -21,7 +21,7 @@
 }
  
 .portraitcarousel .carousel.carousel-slider{
-    margin-left:-36rem;
+    margin-left:-38rem;
     
    }
 .portraitcarousel .carousel .control-prev.control-arrow {
@@ -30,7 +30,8 @@
 }
 
 .portraitcarousel .carousel .control-next.control-arrow {
-    margin-right: 2.5rem;
+    margin-right: 0.01rem;
+    
 }
 .potrait-icon-button{
     background-color: black;

@@ -27,7 +27,6 @@
     width: 45rem;
     
 }
-
 .slide{
     text-align: start;
 }
@@ -68,7 +67,7 @@ p{
 .watchbutton:hover{
     background-color:rgba(217, 0, 141, 0.704) ;
 }
-.control-dots {  
+/* .control-dots {  
     margin-bottom: 50px;
     display: block;  
-}
+} */

@@ -1,3 +1,4 @@
+
 .login{
     display: flex;
     align-items: center;
@@ -19,6 +20,7 @@ margin-right: 10px;
     
 }
 .login-number-input{
+    margin-top: 30px;
    background-color: black;
    border: none;
    color: darkgray;
@@ -27,7 +29,7 @@ margin-right: 10px;
 }
 
 .login-continue-btn{
-    background-color:rgb(232, 66, 121);
+    background-color:rgb(243, 65, 125);
     color: white;
     width: 30%;
     padding: 8px;
@@ -37,4 +39,8 @@ margin-right: 10px;
 .login-para{
     color: white;
     font-weight: 400;
+}
+
+.logindetails{
+    color:rgb(220, 29, 92) ;
 }

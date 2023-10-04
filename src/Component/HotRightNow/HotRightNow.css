@@ -1,5 +1,5 @@
 .hotrightnow{
-    width: 120%;
+    width: 128%;
 }
 .hotrightnow-title{
     color: white;
@@ -22,7 +22,7 @@
 .carousel .hotrightnowimg img{
     object-fit: cover;
 }
-.control-dots .hotrightnow{
+.control-dots {
     display: none;
 }
 .slide{
@@ -30,9 +30,10 @@
 }
 
 .hotrightnow .carousel.carousel-slider{
-    margin-left: -240px;
+    margin-left: -25rem;
     
 }
 .hotrightnow .carousel .control-prev.control-arrow {
-    margin-left: 235px;
+    margin-left: 25.5rem;
+   
 }
