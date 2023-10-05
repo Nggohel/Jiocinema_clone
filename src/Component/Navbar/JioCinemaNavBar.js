@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NavLink from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -17,6 +16,14 @@ function JioCinemaNavBar() {
   const handleAvatarClick = () => {
     setExpand(!expand);
   };
+
+  useEffect(() => {
+    if (expand) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  }, [expand]);
 
   const avatarClass = expand ? "ml-2 avtar expanded-avatar" : "ml-2 avtar";
 

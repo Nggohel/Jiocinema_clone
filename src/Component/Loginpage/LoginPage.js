@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
 import "./LoginPage.css";
@@ -6,8 +6,13 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 
 function LoginPage() {
+  const [isCardMoved, setIsCardMoved] = useState(false);
+
+  const handleLoginClick = () => {
+    setIsCardMoved(!isCardMoved);
+  };
   return (
-    <Card className="loginpagelayout">
+    <Card className={`loginpagelayout ${isCardMoved ? "moved" : ""}`}>
       <div className="parentcard">
         <div className="carddiv">
           <Image
@@ -22,7 +27,11 @@ function LoginPage() {
             <Card.Body>
               <Card.Title className="title">Guest</Card.Title>
               <Link to="/login">
-                <Button variant="primary" className="button">
+                <Button
+                  variant="primary"
+                  className="button"
+                  onClick={handleLoginClick}
+                >
                   Login
                 </Button>
               </Link>
