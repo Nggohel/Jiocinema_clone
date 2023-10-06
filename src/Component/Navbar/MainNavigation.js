@@ -10,7 +10,7 @@ import PotraitCard from "../AllPotraitData/PotraitCard";
 import LandscapeCard from "../AllLandsacpeData/LandscapeCard";
 import Login from "../Login/Login";
 import TvshowPage from "./Pages/TvshowPage";
-
+import SingUp from "../Singup/SingUp";
 function MainNavigation() {
   return (
     <>
@@ -29,6 +29,7 @@ function MainNavigation() {
           <Route path="/Moredatalandscape" element={<LandscapeCard />} />
           <Route path="/back" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/singup" element={<SingUp />} />
         </Routes>
       </Router>
     </>

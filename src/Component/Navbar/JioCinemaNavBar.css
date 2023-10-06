@@ -1,10 +1,14 @@
+.jiocinema-logo{
+    height: 2rem;
+    width: 2rem;
+}
 .mainnav{
     background-color: black;   
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    margin-left: 20px;
+    margin-left: 2rem;
 
 }
 
@@ -107,5 +111,5 @@ content: "";
     align-items: end;
     justify-content: end;
 }
-/* api call  */
+
   

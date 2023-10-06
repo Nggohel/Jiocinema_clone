@@ -35,6 +35,15 @@ function LoginPage() {
                   Login
                 </Button>
               </Link>
+              <Link to="/singup">
+                <Button
+                  variant="primary"
+                  className="button"
+                  onClick={handleLoginClick}
+                >
+                  SingUp
+                </Button>
+              </Link>
               <Card.Body className="innercard">
                 <Image
                   src="images/man.png"
@@ -65,3 +74,4 @@ function LoginPage() {
 }
 
 export default LoginPage;
+// guest ki jagah name ,and email id dikhana he

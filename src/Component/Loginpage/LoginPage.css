@@ -10,8 +10,7 @@
     animation-name: back;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-
-  }
+}
 .parentcard{
     position: absolute;
     right: -25vw;
@@ -20,8 +19,7 @@
     background-color: black;
     animation-name: move;
     animation-duration: 1s;
-    animation-fill-mode: forwards;
-    
+    animation-fill-mode: forwards;    
 }
 .carddiv{
     position: relative;
@@ -52,7 +50,7 @@
     font-weight:700;
     border-radius: 18px;
     padding: 0px 15px;
-    
+    margin-right: 0.2rem;    
 }
 .innercard{ 
     background-color: transparent; 

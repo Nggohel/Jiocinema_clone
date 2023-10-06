@@ -31,7 +31,12 @@ function JioCinemaNavBar() {
     <>
       <Navbar expand="lg" className={expand ? "mainnav expanded" : "mainnav"}>
         <Container>
-          <Nav.Link className="navjiocinema">JioCinema</Nav.Link>
+          <Nav.Link as={Link} to="/" className="navjiocinema">
+            <img src="images/logo.webp" className="jiocinema-logo" />
+          </Nav.Link>
+          <Nav.Link as={Link} to="/" className="navjiocinema">
+            JioCinema
+          </Nav.Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

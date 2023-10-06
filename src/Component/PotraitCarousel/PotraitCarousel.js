@@ -71,4 +71,3 @@ function PotraitCarousel() {
 }
 
 export default PotraitCarousel;
-// use ref

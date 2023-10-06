@@ -1,24 +1,31 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./Login.css";
+import "./SingUp.css";
+import { useNavigate } from "react-router-dom";
 
-function Login() {
+function SingUp() {
+  const [name, setName] = useState("");
+
   const [email, setEmail] = useState("");
 
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
 
-  async function JiocinemaLogin() {
+  async function JiocinemaSingUP() {
     try {
-      let item = { email: email, password: password, appType: "ott" };
+      let item = {
+        name: name,
+        email: email,
+        password: password,
+        appType: "ott",
+      };
       const Header = {
         "Content-Type": "application/json",
         projectID: "paln91dx5ibq",
       };
       let getData = await fetch(
-        "https://academics.newtonschool.co/api/v1/user/login",
+        " https://academics.newtonschool.co/api/v1/user/signup",
         {
           method: "POST",
           headers: Header,
@@ -29,14 +36,16 @@ function Login() {
       let response = await getData.json();
       console.log(response);
       if (response.status == "success") {
-        localStorage.setItem("user-info", JSON.stringify(response));
-        alert("You are Logging in Successfully");
+        alert("You SingUp in Successfully");
+        setName("");
         setEmail("");
         setPassword("");
-        navigate("/foryou");
+        navigate("/login");
       } else {
         alert(response.message);
       }
+
+      localStorage.setItem("user-info", JSON.stringify(response));
     } catch (e) {
       console.log(e);
     }
@@ -44,22 +53,30 @@ function Login() {
 
   return ReactDOM.createPortal(
     <>
-      <div className="login-page">
-        <div className="login">
-          <button className="login-button">
+      <div className="singup-page">
+        <div className="singup">
+          <button className="singup-button">
             <img
               src="images/icons8-arrow-back.png"
-              className="login-button-image"
+              className="singup-button-image"
             />
           </button>
-          <h4 style={{ color: "white" }}>Login to continue</h4>
+          <h4 style={{ color: "white" }}>SingUp to continue</h4>
         </div>
 
-        <p className="login-number">
+        <p className="singup-number">
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            className="singup-number-input"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
+          <br></br>
           <input
             type="email"
             placeholder="Enter Your Email Id"
-            className="login-number-input"
+            className="singup-number-input"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
@@ -67,25 +84,27 @@ function Login() {
           <input
             type="password"
             placeholder="Enter Your Password"
-            className="login-number-input"
+            className="singup-number-input"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
           />
         </p>
-        <button className="login-continue-btn" onClick={JiocinemaLogin}>
+        <button className="singup-continue-btn" onClick={JiocinemaSingUP}>
           Continue
         </button>
-        <p className="login-para">
+        <p className="singup-para">
           By continuing you agree to our
-          <span className="logindetails">Terms of Use</span> and
-          <p className="login-para">
+          <span className="singupdetails">Terms of Use</span> and
+          <p className="singup-para">
             acknowledge that you have read our
-            <span className="logindetails">Privacy Policy</span>.
+            <span className="singupdetails">Privacy Policy</span>.
           </p>
         </p>
       </div>
     </>,
-    document.getElementById("login-page")
+    document.getElementById("sing-up")
   );
 }
-export default Login;
+
+export default SingUp;
+// sataus = success
