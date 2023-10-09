@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./AllPotraitData.css";
+import Details from "../AllDetailsPage/Details";
 
 function AllPotraitData() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState({});
+  const [url, setUrl] = useState(
+    "https://academics.newtonschool.co/api/v1/ott/show"
+  );
+
+  const [clickedItemId, setClickedItemId] = useState(null);
+
   const filterType = "movie";
 
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=20`,
+          url + `?filter={"type": "${filterType}"}&limit=20`,
           {
             method: "GET",
             headers: {
@@ -19,14 +26,25 @@ function AllPotraitData() {
           }
         );
         const json = await response.json();
-        console.log(json);
+        console.log(json.data);
         setData(json.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-    fetchData();
+    fetchData(data);
   }, []);
+
+  // const handleImageClick = (itemId) => {
+  //   console.log("Clicked item ID that i get:", itemId);
+  //   const idOfImage = data.find((item) => item._id === itemId);
+  //   console.log(idOfImage);
+  //   setClickedItemId(itemId);
+  // };
+
+  // useEffect(() => {
+  //   console.log("Id we set:", clickedItemId);
+  // }, [clickedItemId]);
 
   return (
     <>
@@ -43,28 +61,25 @@ function AllPotraitData() {
         {data.length > 0 ? (
           data.map((item, index) => (
             <div className="allportrait-data" key={index}>
-              <a>
+              {console.log("item._id:", item._id)}
+              <Link to={`/details/${item._id}`}>
                 <img
                   className="allportrait-img"
                   src={item.thumbnail}
                   alt={`Image ${index}`}
+                  // onClick={() => handleImageClick(item._id)}
                 />
-              </a>
+              </Link>
             </div>
           ))
         ) : (
           <h2 style={{ color: "white" }}>Loading....</h2>
         )}
       </div>
+
+      {/* {clickedItemId && <Details itemId={clickedItemId} />} */}
     </>
   );
 }
 
 export default AllPotraitData;
-// web series
-// tv show
-// video song
-// short film
-// movie
-// trailer
-// documentary

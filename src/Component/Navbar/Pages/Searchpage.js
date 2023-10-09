@@ -1,10 +1,13 @@
 import React from "react";
-
+import PotraitCarousel from "../../PotraitCarousel/PotraitCarousel";
+import JiocinemaFooter from "../../Footer/JiocinemaFooter";
 function Searchpage() {
   return (
     <>
-      <CarouselCard />
       <PotraitCarousel />
+      <PotraitCarousel />
+      <PotraitCarousel />
+      <JiocinemaFooter />
     </>
   );
 }

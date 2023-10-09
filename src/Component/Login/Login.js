@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./Login.css";
 
@@ -46,12 +46,14 @@ function Login() {
     <>
       <div className="login-page">
         <div className="login">
-          <button className="login-button">
-            <img
-              src="images/icons8-arrow-back.png"
-              className="login-button-image"
-            />
-          </button>
+          <Link to="/back">
+            <button className="login-button">
+              <img
+                src="images/icons8-arrow-back.png"
+                className="login-button-image"
+              />
+            </button>
+          </Link>
           <h4 style={{ color: "white" }}>Login to continue</h4>
         </div>
 

@@ -11,10 +11,16 @@ import LandscapeCard from "../AllLandsacpeData/LandscapeCard";
 import Login from "../Login/Login";
 import TvshowPage from "./Pages/TvshowPage";
 import SingUp from "../Singup/SingUp";
+import EditProfile from "../EditProfile/EditProfile";
+import ScrollToTopComponent from "../ScrollToTopComponent";
+import Details from "../AllDetailsPage/Details";
+import Searchpage from "./Pages/Searchpage";
+
 function MainNavigation() {
   return (
     <>
       <Router>
+        {/* <ScrollToTopComponent /> */}
         <JioCinemaNavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -24,15 +30,19 @@ function MainNavigation() {
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/tvshow" element={<TvshowPage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/search" element={<Searchpage />} />
           <Route path="/Moredatapotrait" element={<PotraitCard />} />
           <Route path="/backtohome" element={<HomePage />} />
           <Route path="/Moredatalandscape" element={<LandscapeCard />} />
           <Route path="/back" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/singup" element={<SingUp />} />
+          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/details/:itemId" element={<Details />} />
         </Routes>
       </Router>
     </>
   );
 }
 export default MainNavigation;
+//

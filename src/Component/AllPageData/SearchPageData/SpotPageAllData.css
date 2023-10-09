@@ -1,71 +1,69 @@
-.main-spotpagealldata{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content:space-between;
-    background: linear-gradient(180deg, #0D0E10 3%, rgba(13, 14, 16, 0) 18.6%),linear-gradient(180.13deg, rgba(13, 14, 16, 0) 62.57%, #0D0E10 88.89%);
+.main-spotpagealldata {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #0d0e10 3%, rgba(13, 14, 16, 0) 18.6%),
+    linear-gradient(180.13deg, rgba(13, 14, 16, 0) 62.57%, #0d0e10 88.89%);
 }
-.carousel .main-spotpagealldata{   
-    margin: 0;
-    height: 27rem;
-    width: 120rem;
-    border: 1px solid black;
-    overflow: hidden;
-    margin-bottom: 20px;
-    position: relative;
+.carousel .main-spotpagealldata {
+  margin: 0;
+  height: 27rem;
+  width: 120rem;
+  border: 1px solid black;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
 }
 .main-spotpagealldata > div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    z-index: 1; 
-  }
-.carousel .main-spotpagealldata img{
-    object-fit: cover;
-    width: 45rem;
-    
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1;
 }
-.slide{
-    text-align: start;
+.carousel .main-spotpagealldata img {
+  object-fit: cover;
+  width: 45rem;
 }
-.carousel-control-prev-icon{
-    color: aqua;
-    background-color:darkgray;
-    border-radius: 50%;
-    padding: 4px;
-   
+.slide {
+  text-align: start;
+}
+.carousel-control-prev-icon {
+  color: aqua;
+  background-color: darkgray;
+  border-radius: 50%;
+  padding: 4px;
 }
 
-.carousel-control-next-icon{
-    color: aqua;
-    background-color:darkgray;
-    border-radius: 50%;
-    padding: 4px;
+.carousel-control-next-icon {
+  color: aqua;
+  background-color: darkgray;
+  border-radius: 50%;
+  padding: 4px;
 }
-h3{
-    color:white;
-    font-Weight: 800;
-   text-align: start;
-    
+h3 {
+  color: white;
+  font-weight: 800;
+  text-align: start;
 }
-p{
-    font-size: 12px;
-    font-weight:600;
-    color: rgb(122, 121, 121);
-    text-align: start;
+p {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(122, 121, 121);
+  text-align: start;
 }
-.watchbutton{
-    border: none;
-    background-color:rgb(217, 0, 141);
-    font-weight:700;
-    border-radius: 10px;
-    padding:9px 30px;
-    font-size: 13px;
+.watchbutton {
+  border: none;
+  background-color: rgb(217, 0, 141);
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 9px 30px;
+  font-size: 13px;
 }
-.watchbutton:hover{
-    background-color:rgba(217, 0, 141, 0.704) ;
+.watchbutton:hover {
+  background-color: rgba(217, 0, 141, 0.704);
 }
 /* .control-dots {  
     margin-bottom: 50px;

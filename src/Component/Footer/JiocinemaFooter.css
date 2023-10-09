@@ -1,0 +1,71 @@
+.jiocinema-footer {
+  height: 14rem;
+  width: 100%;
+  background-color: rgb(21, 21, 21);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-side-footer {
+  /* border: 2px solid white; */
+  width: 25vw;
+  height: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-span {
+  margin-left: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+h6 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+.right-side-footer {
+  /* border: 2px solid white; */
+  height: 72%;
+  width: 42vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-connect-button {
+  background-color: rgb(69, 72, 72);
+  border-radius: 50%;
+  height: 3.2rem;
+  width: 3.2rem;
+  border: none;
+  margin: 0 0.3rem;
+}
+.footer-button-playstore {
+  background-color: black;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.footer-button-appstore {
+  background-color: black;
+  padding: 3px 4px;
+  border-radius: 10px;
+}
+.lower-footer {
+  background-color: rgb(31, 31, 31);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lower-footer p {
+  margin-left: 20px;
+}
+.lower-footer img {
+  margin-right: 20px;
+}
+.lower-footer-img {
+  height: 65px;
+  width: 65px;
+}

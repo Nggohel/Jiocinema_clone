@@ -13,10 +13,17 @@ import LoginPage from "../Loginpage/LoginPage";
 function JioCinemaNavBar() {
   const [expand, setExpand] = useState(false);
 
+  const [searchValue, setSearchValue] = useState("");
+
   const handleAvatarClick = () => {
     setExpand(!expand);
   };
 
+  const handleSearchChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+  // have to check
   useEffect(() => {
     if (expand) {
       document.body.style.overflow = "hidden";
@@ -64,14 +71,19 @@ function JioCinemaNavBar() {
         <Form inline className="ml-auto">
           <Row>
             <Col xs="auto">
-              <Form.Control
-                type="text"
-                placeholder="Search"
-                className=" mr-sm-2 searchbar from"
-              />
+              <Nav.Link as={Link} to="/search">
+                <Form.Control
+                  type="text"
+                  placeholder="Search"
+                  className=" mr-sm-2 searchbar from"
+                  value={searchValue}
+                  onChange={handleSearchChange}
+                />
+              </Nav.Link>
             </Col>
           </Row>
         </Form>
+
         <Image
           src="images/man.png"
           width="35"
@@ -88,3 +100,4 @@ function JioCinemaNavBar() {
 }
 
 export default JioCinemaNavBar;
+// filter

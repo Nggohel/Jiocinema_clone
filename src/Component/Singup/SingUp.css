@@ -1,58 +1,53 @@
-.singup-page{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-    
+.singup-page {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.singup{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 31vw;
+.singup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 31vw;
 }
-.singup-button{
-    background-color: black;
-    border: none;
+.singup-button {
+  background-color: black;
+  border: none;
 }
-.singup-button-image{
-background-color: black;
-height: 25px;
-width: 23px;
-transform: rotate(90deg);
-margin-right: 10px;
+.singup-button-image {
+  background-color: black;
+  height: 25px;
+  width: 23px;
+  transform: rotate(90deg);
+  margin-right: 10px;
 }
-.singup-number{
-    font-size: 15px;
-    
+.singup-number {
+  font-size: 15px;
 }
-.singup-number-input{
-   margin-top: 30px;
-   background-color: black;
-   border: none;
-   color: darkgray;
-   border-bottom: 2px solid rgb(232, 66, 121) ;
-   width: 30vw;
-
+.singup-number-input {
+  margin-top: 30px;
+  background-color: black;
+  border: none;
+  color: darkgray;
+  border-bottom: 2px solid rgb(232, 66, 121);
+  width: 30vw;
 }
 
-.singup-continue-btn{
-    background-color:rgb(243, 65, 125);
-    color: white;
-    width: 30%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin: 1rem 0;
+.singup-continue-btn {
+  background-color: rgb(243, 65, 125);
+  color: white;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
 }
-.singup-para{
-    color: white;
-    font-weight: 400;
-    
+.singup-para {
+  color: white;
+  font-weight: 400;
 }
 
-.singupdetails{
-    color:rgb(220, 29, 92) ;
+.singupdetails {
+  color: rgb(220, 29, 92);
 }

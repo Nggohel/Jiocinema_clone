@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import "./SingUp.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function SingUp() {
   const [name, setName] = useState("");
@@ -55,12 +55,14 @@ function SingUp() {
     <>
       <div className="singup-page">
         <div className="singup">
-          <button className="singup-button">
-            <img
-              src="images/icons8-arrow-back.png"
-              className="singup-button-image"
-            />
-          </button>
+          <Link to="/back">
+            <button className="singup-button">
+              <img
+                src="images/icons8-arrow-back.png"
+                className="singup-button-image"
+              />
+            </button>
+          </Link>
           <h4 style={{ color: "white" }}>SingUp to continue</h4>
         </div>
 

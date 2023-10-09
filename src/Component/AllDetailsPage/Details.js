@@ -1,33 +1,69 @@
 import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import "./Details.css";
+
 function Details() {
   const [data, setData] = useState([]);
-  const filterType = "movie";
+  const { itemId } = useParams();
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=20`,
-          {
-            method: "GET",
-            headers: {
-              projectID: "paln91dx5ibq",
-            },
-          }
-        );
-        const json = await response.json();
-        console.log(json);
+        const url = `https://academics.newtonschool.co/api/v1/ott/show/${itemId}`;
+        const getData = await fetch(url, {
+          method: "GET",
+          headers: {
+            projectID: "paln91dx5ibq",
+          },
+        });
+        const json = await getData.json();
+        console.log(json.data);
         setData(json.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
-    fetchData();
-  }, []);
+    fetchData(data);
+  }, [itemId]);
+
+  console.log(data.cast);
   return (
     <>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
+      <div>
+        {data && data.thumbnail ? (
+          <>
+            <div
+              className="image-container"
+              style={{
+                backgroundImage: `url(${data.thumbnail})`,
+              }}
+            >
+              <div className="deatils-card-position">
+                <div className="deatils-main">
+                  <button className="details-button">Watch</button>
+                  <div className="details-data">
+                    <h4>{data.title}</h4>
+
+                    <span>duration</span>
+
+                    <p className="details-data">
+                      {data.description}
+
+                      <span>{data.description}</span>
+                    </p>
+                  </div>
+                  <div className="details-data details-data-cast">
+                    <h5>Cast:</h5>
+                    <p className="details-data-cast">{data.cast.join(", ")}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          <span>Thumbnail not available</span>
+        )}
+      </div>
     </>
   );
 }

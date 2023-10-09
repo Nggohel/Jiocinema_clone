@@ -1,31 +1,31 @@
-.landscapecarousel{
-    width: 130%;
+.landscapecarousel {
+  width: 130%;
 }
 
-.landscape-img{
-height: 150px;
-width: 300px;   
-border: 1px solid black;
-border-radius: 10px;
-overflow: hidden;
-margin-bottom: 20px; 
+.landscape-img {
+  height: 150px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 
-.landscapecarousel .carousel.carousel-slider{
-    margin-left: -22.5rem;
+.landscapecarousel .carousel.carousel-slider {
+  margin-left: -22.5rem;
 }
 .landscapecarousel .carousel .control-prev.control-arrow {
-    margin-left: 22.5rem;
+  margin-left: 22.5rem;
 }
 .landscapecarousel .carousel .control-next.control-arrow {
-    margin-right:4rem;
+  margin-right: 4rem;
 }
-.landscape-icon-button{
-    background-color: black;
-    border: none;
+.landscape-icon-button {
+  background-color: black;
+  border: none;
 }
-.landscape-icon{
-   height: 24px;
-   width: 24px;
-   margin-right: 0.5rem;
+.landscape-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 0.5rem;
 }
