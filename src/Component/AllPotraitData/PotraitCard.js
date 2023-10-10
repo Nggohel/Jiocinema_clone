@@ -3,7 +3,6 @@ import AllPotraitData from "./AllPotraitData";
 function PotraitCard() {
   return (
     <>
-      {/* <JioCinemaNavBar /> */}
       <AllPotraitData />
     </>
   );

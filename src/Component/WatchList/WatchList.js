@@ -1,48 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./AllPotraitData.css";
-
-function AllPotraitData() {
+function WatchList() {
   const [data, setData] = useState({});
-  const [url, setUrl] = useState(
-    "https://academics.newtonschool.co/api/v1/ott/show"
-  );
-
-  const filterType = "movie";
-
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          url + `?filter={"type": "${filterType}"}&limit=20`,
+          "https://academics.newtonschool.co/api/v1/ott/watchlist/like",
           {
             method: "GET",
             headers: {
+              Authorization:
+                "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGU1ZWYwZGJlZGNmNGY2MDIzOWIyNSIsImlhdCI6MTY5NTQ0MDYyNCwiZXhwIjoxNzI2OTc2NjI0fQ.YN3msPl6OFLpUM-ZYKeR0ONPb134QdlqQegDImvqCoc",
               projectID: "paln91dx5ibq",
             },
           }
         );
         const json = await response.json();
-        console.log(json.data);
-        setData(json.data);
+        setData(json.data.shows);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
     fetchData(data);
   }, []);
-
   return (
     <>
-      <div className="allportrait-title">
-        <Link to="/backtohome">
-          <button className="allportrait-button">
-            <img className="allportrait-icon" src="images/left-side.png" />
-          </button>
-        </Link>
-        <h4 className="allportrait-name">Hot Right Now</h4>
-      </div>
-
+      <h4 style={{ color: "white" }}>WatchList</h4>
       <div className="allportrait-card">
         {data.length > 0 ? (
           data.map((item, index) => (
@@ -64,4 +48,4 @@ function AllPotraitData() {
   );
 }
 
-export default AllPotraitData;
+export default WatchList;

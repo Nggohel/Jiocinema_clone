@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Details.css";
 
 function Details() {
@@ -26,7 +27,8 @@ function Details() {
     fetchData(data);
   }, [itemId]);
 
-  console.log(data.cast);
+  console.log(data);
+
   return (
     <>
       <div>
@@ -40,7 +42,11 @@ function Details() {
             >
               <div className="deatils-card-position">
                 <div className="deatils-main">
-                  <button className="details-button">Watch</button>
+                  <Link
+                    to={`/gettingvideo/${encodeURIComponent(data.video_url)}`}
+                  >
+                    <button className="details-button">Watch</button>
+                  </Link>
                   <div className="details-data">
                     <h4>{data.title}</h4>
 

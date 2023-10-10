@@ -93,7 +93,9 @@ function LoginPage() {
             </div>
 
             <h6>Subcribe Now!</h6>
-            <h6>My WatchList!</h6>
+            <Link to="/watchlist">
+              <h6 onClick={handleLoginClick}>My WatchList!</h6>
+            </Link>
             <h6>Setting</h6>
           </>
         ) : (

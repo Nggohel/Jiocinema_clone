@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -15,12 +16,23 @@ function JioCinemaNavBar() {
 
   const [searchValue, setSearchValue] = useState("");
 
+  const navigate = useNavigate();
+
   const handleAvatarClick = () => {
     setExpand(!expand);
   };
 
   const handleSearchChange = (e) => {
     setSearchValue(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if (searchValue.trim() !== "") {
+      navigate(`/search/${searchValue}`);
+    } else {
+      navigate(`/search`);
+    }
   };
 
   // have to check
@@ -68,18 +80,16 @@ function JioCinemaNavBar() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <Form inline className="ml-auto">
+        <Form inline className="ml-auto" onSubmit={handleSearchSubmit}>
           <Row>
             <Col xs="auto">
-              <Nav.Link as={Link} to="/search">
-                <Form.Control
-                  type="text"
-                  placeholder="Search"
-                  className=" mr-sm-2 searchbar from"
-                  value={searchValue}
-                  onChange={handleSearchChange}
-                />
-              </Nav.Link>
+              <Form.Control
+                type="text"
+                placeholder="Search"
+                className=" mr-sm-2 searchbar from"
+                value={searchValue}
+                onChange={handleSearchChange}
+              />
             </Col>
           </Row>
         </Form>
