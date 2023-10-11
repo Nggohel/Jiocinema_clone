@@ -1,45 +1,33 @@
-.portraitcarousel{
-    width: 143%;
+.portraitcarousel {
+  width: 100%;
 }
-.potraittitle{
-    color: white;
-    text-align:start;
-    margin-top: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.potraittitle {
+  color: white;
+  text-align: start;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.potraitsimg{
-    height:18rem;
-    width: 185px;
-    margin-bottom: 10px;
-
+.potraitsimg {
+  height: 18rem;
+  width: 185px;
+  margin-bottom: 10px;
 }
-.carousel .potraitsimg img{
-    object-fit: cover;
-    border-radius: 10px;
-}
- 
-.portraitcarousel .carousel.carousel-slider{
-    margin-left:-38rem;
-    
-   }
-.portraitcarousel .carousel .control-prev.control-arrow {
-    margin-left: 38rem;
-    
+.carousel .potraitsimg img {
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.portraitcarousel .carousel .control-next.control-arrow {
-    margin-right: 0.01rem;
-    
+div.carousel-root.portraitcarousel ul.slider.animated {
+  margin-left: -25% !important;
 }
-.potrait-icon-button{
-    background-color: black;
-    border: none;
+.potrait-icon-button {
+  background-color: black;
+  border: none;
 }
-.potrait-icon{
-   height: 24px;
-   width: 24px;
-   margin-right: 0.5rem;
-   
+.potrait-icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 0.5rem;
 }

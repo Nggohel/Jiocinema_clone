@@ -47,7 +47,7 @@ function PotraitCarousel() {
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={11.1} // Show three items at a time
+        centerSlidePercentage={15}
         emulateTouch={false}
       >
         {data.length > 0 ? (

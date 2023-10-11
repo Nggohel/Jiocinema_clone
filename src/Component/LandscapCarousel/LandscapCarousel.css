@@ -1,5 +1,5 @@
 .landscapecarousel {
-  width: 130%;
+  width: 100%;
 }
 
 .landscape-img {
@@ -10,15 +10,8 @@
   overflow: hidden;
   margin-bottom: 20px;
 }
-
-.landscapecarousel .carousel.carousel-slider {
-  margin-left: -22.5rem;
-}
-.landscapecarousel .carousel .control-prev.control-arrow {
-  margin-left: 22.5rem;
-}
-.landscapecarousel .carousel .control-next.control-arrow {
-  margin-right: 4rem;
+div.carousel-root.landscapecarousel ul.slider.animated {
+  margin-left: -12% !important;
 }
 .landscape-icon-button {
   background-color: black;

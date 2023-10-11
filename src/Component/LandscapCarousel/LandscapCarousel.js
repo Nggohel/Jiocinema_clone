@@ -47,7 +47,7 @@ function LandscapCarousel() {
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={18} // Show three items at a time
+        centerSlidePercentage={23.2} // Show three items at a time
         emulateTouch={false}
       >
         {data.length > 0 ? (
@@ -65,76 +65,6 @@ function LandscapCarousel() {
         ) : (
           <h2 style={{ color: "white" }}>Loading....</h2>
         )}
-        {/* <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="First slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Second slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="First slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Second slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
-        <div className="landscape-img">
-          <img
-            src="images/ind_vs_aus_carousel_highlights.webp"
-            alt="Third slide"
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div> */}
       </Carousel>
     </>
   );

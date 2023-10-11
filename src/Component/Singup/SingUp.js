@@ -109,4 +109,3 @@ function SingUp() {
 }
 
 export default SingUp;
-// sataus = success

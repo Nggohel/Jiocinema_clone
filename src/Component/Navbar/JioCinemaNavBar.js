@@ -24,16 +24,22 @@ function JioCinemaNavBar() {
 
   const handleSearchChange = (e) => {
     setSearchValue(e.target.value);
-  };
 
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
     if (searchValue.trim() !== "") {
       navigate(`/search/${searchValue}`);
     } else {
       navigate(`/search`);
     }
   };
+
+  // const handleSearchSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (searchValue.trim() !== "") {
+  //     navigate(`/search/${searchValue}`);
+  //   } else {
+  //     navigate(`/search`);
+  //   }
+  // };
 
   // have to check
   useEffect(() => {
@@ -80,19 +86,19 @@ function JioCinemaNavBar() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-        <Form inline className="ml-auto" onSubmit={handleSearchSubmit}>
-          <Row>
-            <Col xs="auto">
-              <Form.Control
-                type="text"
-                placeholder="Search"
-                className=" mr-sm-2 searchbar from"
-                value={searchValue}
-                onChange={handleSearchChange}
-              />
-            </Col>
-          </Row>
-        </Form>
+        {/* <Form inline className="ml-auto" onSubmit={handleSearchSubmit}> */}
+        <Row>
+          <Col xs="auto">
+            <Form.Control
+              type="text"
+              placeholder="Search"
+              className=" mr-sm-2 searchbar from"
+              value={searchValue}
+              onChange={handleSearchChange}
+            />
+          </Col>
+        </Row>
+        {/* </Form> */}
 
         <Image
           src="images/man.png"
@@ -111,3 +117,5 @@ function JioCinemaNavBar() {
 
 export default JioCinemaNavBar;
 // filter
+// sing
+// .envfile apl variable se name ke api

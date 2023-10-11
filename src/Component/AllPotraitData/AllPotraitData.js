@@ -13,15 +13,12 @@ function AllPotraitData() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(
-          url + `?filter={"type": "${filterType}"}&limit=20`,
-          {
-            method: "GET",
-            headers: {
-              projectID: "paln91dx5ibq",
-            },
-          }
-        );
+        const response = await fetch(url + `?limit=100`, {
+          method: "GET",
+          headers: {
+            projectID: "paln91dx5ibq",
+          },
+        });
         const json = await response.json();
         console.log(json.data);
         setData(json.data);

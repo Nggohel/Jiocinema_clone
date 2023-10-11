@@ -1,17 +1,17 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import "./HotRightNow.css";
-function HotRightNow() {
-  const [data, setData] = useState([]);
-  const filterType = " short film";
-  const carouselRef = useRef(null);
+import "./PotraitCarousel.css";
 
+function DocumentryPotraitCarousel() {
+  const [data, setData] = useState([]);
+  const filterType = "documentary";
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?limit=11`,
+          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=10`,
           {
             method: "GET",
             headers: {
@@ -20,7 +20,7 @@ function HotRightNow() {
           }
         );
         const json = await response.json();
-        console.log(json.data);
+        console.log(json);
         setData(json.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -28,35 +28,31 @@ function HotRightNow() {
     }
     fetchData();
   }, []);
-
-  useEffect(() => {
-    // Delay setting the transform property to ensure it overrides existing styles
-    setTimeout(() => {
-      if (carouselRef.current) {
-        carouselRef.current.style.transitionDuration = "0ms"; // Remove transition duration for immediate change
-        carouselRef.current.style.transform = "translate3d(2.5%, 0px, 0px)"; // Change the value as needed
-      }
-    }, 0);
-  }, []);
   return (
     <>
-      <div className="hotrightnow-title">
-        <h4>Hot Right Now short film</h4>
+      <div className="potraittitle">
+        <h4>Documentary</h4>
+
+        <Link to="/Moredatapotrait">
+          <button className="potrait-icon-button">
+            <img className="potrait-icon" src="images/download.png" />
+          </button>
+        </Link>
       </div>
 
       <Carousel
-        className="hotrightnow "
+        className="portraitcarousel"
         showArrows={true} // Show navigation arrows
         showStatus={false} // Hide status indicator
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={29}
+        centerSlidePercentage={11.1} // Show three items at a time
         emulateTouch={false}
       >
         {data.length > 0 ? (
           data.map((item, index) => (
-            <div className="hotrightnowimg" key={index}>
+            <div className="potraitsimg" key={index}>
               <a>
                 <img
                   src={item.thumbnail}
@@ -74,4 +70,4 @@ function HotRightNow() {
   );
 }
 
-export default HotRightNow;
+export default DocumentryPotraitCarousel;

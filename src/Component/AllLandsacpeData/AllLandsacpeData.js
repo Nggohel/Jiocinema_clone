@@ -9,7 +9,7 @@ function AllLandscapeData() {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=20`,
+          `https://academics.newtonschool.co/api/v1/ott/show?limit=100`,
           {
             method: "GET",
             headers: {

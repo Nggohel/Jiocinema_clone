@@ -1,5 +1,7 @@
 .hotrightnow {
-  width: 128%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .hotrightnow-title {
   color: white;
@@ -10,9 +12,8 @@
   justify-content: space-between;
 }
 .carousel .hotrightnowimg {
-  margin: 0px 50px;
-  height: 274px;
-  width: 274px;
+  height: 300px;
+  width: 350px;
   border: 1px solid black;
   border-radius: 10px;
   overflow: hidden;
@@ -24,13 +25,7 @@
 .control-dots {
   display: none;
 }
-.slide {
-  text-align: start;
-}
 
 .hotrightnow .carousel.carousel-slider {
-  margin-left: -25rem;
-}
-.hotrightnow .carousel .control-prev.control-arrow {
-  margin-left: 25.5rem;
+  width: 100%;
 }
