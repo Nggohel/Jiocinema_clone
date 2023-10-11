@@ -4,9 +4,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./PotraitCarousel.css";
 
-function DocumentryPotraitCarousel() {
+function VideoSongPotraitCarousel() {
   const [data, setData] = useState([]);
-  const filterType = "documentary";
+  const filterType = "video song";
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -31,7 +32,7 @@ function DocumentryPotraitCarousel() {
   return (
     <>
       <div className="potraittitle">
-        <h4>Documentary</h4>
+        <h5>Video Song</h5>
 
         <Link to="/Moredatapotrait">
           <button className="potrait-icon-button">
@@ -47,7 +48,7 @@ function DocumentryPotraitCarousel() {
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={11.1} // Show three items at a time
+        centerSlidePercentage={15} // Show three items at a time
         emulateTouch={false}
       >
         {data.length > 0 ? (
@@ -70,4 +71,4 @@ function DocumentryPotraitCarousel() {
   );
 }
 
-export default DocumentryPotraitCarousel;
+export default VideoSongPotraitCarousel;

@@ -41,7 +41,7 @@ function HotRightNow() {
   return (
     <>
       <div className="hotrightnow-title">
-        <h4>Hot Right Now short film</h4>
+        <h4>Trending</h4>
       </div>
 
       <Carousel
@@ -51,7 +51,7 @@ function HotRightNow() {
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={29}
+        centerSlidePercentage={21}
         emulateTouch={false}
       >
         {data.length > 0 ? (

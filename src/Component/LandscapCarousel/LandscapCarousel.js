@@ -31,8 +31,8 @@ function LandscapCarousel() {
 
   return (
     <>
-      <div className="potraittitle">
-        <h4>LandscapeCarousel documentary</h4>
+      <div className="landscapetitle">
+        <h4> Documentary</h4>
         <Link to="/Moredatalandscape">
           <button className="landscape-icon-button">
             <img className="landscape-icon" src="images/download.png" />
@@ -47,7 +47,7 @@ function LandscapCarousel() {
         showThumbs={false} // Hide thumbnail images
         infiniteLoop={true} // Enable infinite loop
         centerMode={true} // Center the current slide
-        centerSlidePercentage={23.2} // Show three items at a time
+        centerSlidePercentage={23.2}
         emulateTouch={false}
       >
         {data.length > 0 ? (

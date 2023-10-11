@@ -2,6 +2,15 @@
   width: 100%;
 }
 
+.landscapetitle {
+  color: white;
+  margin-left: 2rem;
+  text-align: start;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .landscape-img {
   height: 150px;
   width: 300px;
@@ -10,8 +19,11 @@
   overflow: hidden;
   margin-bottom: 20px;
 }
+.landscape-img img {
+  object-fit: cover;
+}
 div.carousel-root.landscapecarousel ul.slider.animated {
-  margin-left: -12% !important;
+  margin-left: -13% !important;
 }
 .landscape-icon-button {
   background-color: black;

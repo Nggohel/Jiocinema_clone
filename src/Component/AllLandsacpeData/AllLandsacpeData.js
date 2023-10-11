@@ -34,7 +34,7 @@ function AllLandscapeData() {
             <img className="alllandscape-icon" src="images/left-side.png" />
           </button>
         </Link>
-        <h4 className="alllandscape-name">all Landscape Card</h4>
+        <h4 className="alllandscape-name">All Options....</h4>
       </div>
 
       <div className="alllandscape-card">

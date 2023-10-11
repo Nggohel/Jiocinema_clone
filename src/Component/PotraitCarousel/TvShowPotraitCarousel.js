@@ -4,9 +4,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./PotraitCarousel.css";
 
-function PotraitCarousel() {
+function TvShowPotraitCarousel() {
   const [data, setData] = useState([]);
-  const filterType = "movie";
+  const filterType = "tv show";
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -31,7 +32,7 @@ function PotraitCarousel() {
   return (
     <>
       <div className="potraittitle">
-        <h5>Movie</h5>
+        <h4>Tv Show</h4>
 
         <Link to="/Moredatapotrait">
           <button className="potrait-icon-button">
@@ -42,12 +43,12 @@ function PotraitCarousel() {
 
       <Carousel
         className="portraitcarousel"
-        showArrows={true}
-        showStatus={false}
-        showThumbs={false}
-        infiniteLoop={true}
-        centerMode={true}
-        centerSlidePercentage={15}
+        showArrows={true} // Show navigation arrows
+        showStatus={false} // Hide status indicator
+        showThumbs={false} // Hide thumbnail images
+        infiniteLoop={true} // Enable infinite loop
+        centerMode={true} // Center the current slide
+        centerSlidePercentage={15} // Show three items at a time
         emulateTouch={false}
       >
         {data.length > 0 ? (
@@ -63,11 +64,11 @@ function PotraitCarousel() {
             </div>
           ))
         ) : (
-          <h5 style={{ color: "white" }}>Loading....</h5>
+          <h2 style={{ color: "white" }}>Loading....</h2>
         )}
       </Carousel>
     </>
   );
 }
 
-export default PotraitCarousel;
+export default TvShowPotraitCarousel;

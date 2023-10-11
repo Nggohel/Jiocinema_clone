@@ -3,8 +3,10 @@
 }
 .potraittitle {
   color: white;
+  margin-left: 2rem;
+  margin-top: 1rem;
   text-align: start;
-  margin-top: 45px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
