@@ -29,15 +29,6 @@ function HotRightNow() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    // Delay setting the transform property to ensure it overrides existing styles
-    setTimeout(() => {
-      if (carouselRef.current) {
-        carouselRef.current.style.transitionDuration = "0ms"; // Remove transition duration for immediate change
-        carouselRef.current.style.transform = "translate3d(2.5%, 0px, 0px)"; // Change the value as needed
-      }
-    }, 0);
-  }, []);
   return (
     <>
       <div className="hotrightnow-title">

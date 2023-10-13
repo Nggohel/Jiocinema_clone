@@ -69,3 +69,8 @@ h6 {
   height: 65px;
   width: 65px;
 }
+@media (max-width: 768px) {
+  .jiocinema-footer {
+    display: none;
+  }
+}

@@ -32,7 +32,7 @@ function PotraitCarousel() {
   return (
     <>
       <div className="potraittitle">
-        <h5>Movie</h5>
+        <h4>Movie</h4>
 
         <Link to="/Moredatapotrait">
           <button className="potrait-icon-button">

@@ -33,3 +33,22 @@ div.carousel-root.portraitcarousel ul.slider.animated {
   width: 24px;
   margin-right: 0.5rem;
 }
+@media (max-width: 768px) {
+  .potraittitle {
+    margin-left: 0.5rem;
+  }
+  .potraittitle h4 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .potraitsimg {
+    height: 155px;
+    width: 116px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  div.carousel-root.portraitcarousel li.slide {
+    min-width: 33% !important  ;
+  }
+}

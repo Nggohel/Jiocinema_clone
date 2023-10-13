@@ -42,7 +42,11 @@ function CarouselCard() {
     >
       <div className="main-carouselimage">
         <a>
-          <img className="" src="images/header-1.webp" alt="headerimage" />
+          <img
+            className="main-img"
+            src="images/header-1.webp"
+            alt="headerimage"
+          />
         </a>
         <div>
           <h3 style={{ color: "white" }}>MEIN, MEHMOOD</h3>

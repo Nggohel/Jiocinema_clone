@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
-  border: 2px solid pink;
 }
 .mainnav-mobile {
   border: 2px solid aqua;
@@ -33,7 +32,7 @@
   font-size: 13px;
   width: 96px;
   font-weight: 700;
-  margin-top: 11px;
+  margin-top: 9px;
   padding: 0;
   height: 24px;
 }
@@ -154,12 +153,9 @@ a.tvshow.nav-link {
     margin-left: -10px;
     margin-bottom: 10px;
   }
-  .searchbar {
+  /* .avtar {
     display: none;
-  }
-  .avtar {
-    display: none;
-  }
+  } */
   .navfor-phonescreen {
     display: flex;
     flex-direction: row;
@@ -169,16 +165,23 @@ a.tvshow.nav-link {
   .mainnav-mobile {
     background-color: black;
     display: flex;
-    flex-direction: column; /* Change the flex-direction to column */
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end; /* Align to the bottom */
-    position: fixed; /* Position the navigation at the bottom */
-    bottom: 0; /* Stick to the bottom of the screen */
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 0;
     left: 0;
-    right: 0; /* Stretch to the edges */
+    right: 0;
     padding: 10px 0;
+    z-index: 1;
   }
   .mobilescreen {
     display: block;
+  }
+  .lapton-screen {
+    display: none;
+  }
+  .navsubcribe {
+    padding: 3px;
   }
 }

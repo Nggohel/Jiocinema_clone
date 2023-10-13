@@ -21,6 +21,8 @@
 }
 .landscape-img img {
   object-fit: cover;
+  height: 150px;
+  width: 300px;
 }
 div.carousel-root.landscapecarousel ul.slider.animated {
   margin-left: -13% !important;
@@ -33,4 +35,25 @@ div.carousel-root.landscapecarousel ul.slider.animated {
   height: 24px;
   width: 24px;
   margin-right: 0.5rem;
+}
+@media (max-width: 768px) {
+  .landscapetitle {
+    margin-left: 0.5rem;
+  }
+  .landscapetitle h4 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .landscape-img {
+    height: 100px;
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  div.carousel-root.landscapecarousel li.slide {
+    min-width: 45% !important  ;
+  }
 }

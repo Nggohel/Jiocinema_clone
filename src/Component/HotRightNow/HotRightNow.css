@@ -31,3 +31,12 @@ div.carousel-root.hotrightnow ul.slider.animated {
 .hotrightnow .carousel.carousel-slider {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .hotrightnow-title {
+    display: none;
+  }
+  .hotrightnow {
+    display: none;
+  }
+}
