@@ -28,14 +28,11 @@ function EditProfile() {
         Authorization: `Bearer ${GetData.token}`,
         projectID: "paln91dx5ibq",
       };
-      let getData = await fetch(
-        "https://academics.newtonschool.co/api/v1/user/updateme",
-        {
-          method: "PATCH",
-          headers: Header,
-          body: JSON.stringify(item),
-        }
-      );
+      let getData = await fetch(`${process.env.REACT_APP_EDITPROFILE_URL}`, {
+        method: "PATCH",
+        headers: Header,
+        body: JSON.stringify(item),
+      });
 
       let response = await getData.json();
       console.log(response);
@@ -56,44 +53,6 @@ function EditProfile() {
   }
 
   async function handleProfileImageUpdate() {
-    // try {
-    //   if (!profileImageFile) {
-    //     alert("Please select a profile image.");
-    //     return;
-    //   }
-
-    //   const formData = new FormData();
-    //   formData.append("profileImage", profileImageFile);
-
-    //   const Header = {
-    //     Authorization: `Bearer ${GetData.token}`,
-    //     projectID: "paln91dx5ibq",
-    //   };
-    //   let getData = await fetch(
-    //     "https://academics.newtonschool.co/api/v1/user/updateme",
-    //     {
-    //       method: "PATCH",
-    //       headers: Header,
-    //       body: formData,
-    //     }
-    //   );
-
-    //   let response = await getData.json();
-    //   console.log(response);
-    //   if (response.status === "success") {
-    //     alert("Your profile image is Successfully updated!!!");
-    //     setName("");
-    //     setNumber("");
-    //     setAddress("");
-    //     navigate("/foryou");
-    //   } else {
-    //     alert(response.message);
-    //   }
-
-    //   localStorage.setItem("user-info", JSON.stringify(response));
-    // } catch (e) {
-    //   console.log(e);
-    // }
     alert("currently working on this part");
   }
 

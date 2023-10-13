@@ -9,7 +9,7 @@ function Searchpage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const url = `https://academics.newtonschool.co/api/v1/ott/show?search={"keywords":"${query}"}`;
+        const url = `${process.env.REACT_APP_GET_DATA_URL}?search={"keywords":"${query}"}`;
         const getData = await fetch(url, {
           method: "GET",
           headers: {
@@ -26,17 +26,13 @@ function Searchpage() {
     if (query.trim() !== "") {
       fetchData();
     }
-    // fetchData(data);
   }, [query]);
   console.log(data);
   return (
     <>
       {query.trim() === "" ? (
-        // Render PotraitCard when query is empty
         <PotraitCard />
       ) : (
-        // Render fetched data when query is not empty
-
         <div className="allportrait-card">
           {data.length > 0 ? (
             data?.map((item, index) => (

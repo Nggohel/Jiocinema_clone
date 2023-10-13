@@ -10,7 +10,7 @@ function Details() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const url = `https://academics.newtonschool.co/api/v1/ott/show/${itemId}`;
+        const url = `${process.env.REACT_APP_GET_DATA_URL}/${itemId}`;
         const getData = await fetch(url, {
           method: "GET",
           headers: {

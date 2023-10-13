@@ -50,24 +50,21 @@ function JioCinemaNavBar() {
     }
   }, [expand]);
 
-  const avatarClass = expand ? "ml-2 avtar expanded-avatar" : "ml-2 avtar";
-
   return (
     <>
       <Navbar expand="lg" className={expand ? "mainnav expanded" : "mainnav"}>
         <Container>
-          <Nav.Link as={Link} to="/" className="navjiocinema">
-            <img src="images/logo.webp" className="jiocinema-logo" />
-          </Nav.Link>
-          <Nav.Link as={Link} to="/" className="navjiocinema">
-            JioCinema
-          </Nav.Link>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link as={Link} to="/subscribe" className="navsubcribe">
-                <p className="subcribe">Subcribe</p>
-              </Nav.Link>
+          <div className="mobile-top-nav">
+            <Nav.Link as={Link} to="/" className="navjiocinema">
+              <img src="images/logo.webp" className="jiocinema-logo" />
+              JioCinema
+            </Nav.Link>
+            <Nav.Link as={Link} to="/subscribe" className="navsubcribe">
+              <p className="subcribe">Subcribe</p>
+            </Nav.Link>
+          </div>
+          <Navbar className="mainnav-mobile">
+            <Nav className="me-auto navfor-phonescreen">
               <Nav.Link as={Link} to="/foryou" className="navforyou">
                 For You
               </Nav.Link>
@@ -84,9 +81,8 @@ function JioCinemaNavBar() {
                 News
               </Nav.Link>
             </Nav>
-          </Navbar.Collapse>
+          </Navbar>
         </Container>
-        {/* <Form inline className="ml-auto" onSubmit={handleSearchSubmit}> */}
         <Row>
           <Col xs="auto">
             <Form.Control
@@ -98,8 +94,59 @@ function JioCinemaNavBar() {
             />
           </Col>
         </Row>
-        {/* </Form> */}
-
+        <Image
+          src="images/man.png"
+          width="35"
+          height="35"
+          roundedCircle
+          alt="User Avatar"
+          className="ml-2 avtar"
+          onClick={handleAvatarClick}
+        />
+      </Navbar>
+      {expand ? <LoginPage /> : ""}
+      <Navbar expand="lg" className="mobilescreen">
+        <Container>
+          <div className="mobile-top-nav">
+            <Nav.Link as={Link} to="/" className="navjiocinema">
+              <img src="images/logo.webp" className="jiocinema-logo" />
+              JioCinema
+            </Nav.Link>
+            <Nav.Link as={Link} to="/subscribe" className="navsubcribe">
+              <p className="subcribe">Subcribe</p>
+            </Nav.Link>
+          </div>
+          <Navbar className="mainnav-mobile">
+            <Nav className="me-auto navfor-phonescreen">
+              <Nav.Link as={Link} to="/foryou" className="navforyou">
+                For You
+              </Nav.Link>
+              <Nav.Link as={Link} to="/sport" className="sport">
+                Sport
+              </Nav.Link>
+              <Nav.Link as={Link} to="/movies" className="movies">
+                Movies
+              </Nav.Link>
+              <Nav.Link as={Link} to="/tvshow" className="tvshow">
+                Tv Shows
+              </Nav.Link>
+              <Nav.Link as={Link} to="/news" className="news">
+                News
+              </Nav.Link>
+            </Nav>
+          </Navbar>
+        </Container>
+        <Row>
+          <Col xs="auto">
+            <Form.Control
+              type="text"
+              placeholder="Search"
+              className=" mr-sm-2 searchbar from"
+              value={searchValue}
+              onChange={handleSearchChange}
+            />
+          </Col>
+        </Row>
         <Image
           src="images/man.png"
           width="35"
@@ -116,6 +163,3 @@ function JioCinemaNavBar() {
 }
 
 export default JioCinemaNavBar;
-// filter
-// sing
-// .envfile apl variable se name ke api

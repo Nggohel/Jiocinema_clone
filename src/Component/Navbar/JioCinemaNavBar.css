@@ -1,42 +1,49 @@
-.jiocinema-logo{
-    height: 2rem;
-    width: 2rem;
+.mobilescreen {
+  display: none;
 }
-.mainnav{
-    background-color: black;   
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin-left: 2rem;
-
+.jiocinema-logo {
+  height: 2rem;
+  width: 2rem;
 }
-
-.navjiocinema{
-    color: white;
-    font-weight: 750;
-    font-size: 18px;
+.mainnav {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border: 2px solid pink;
 }
-.navsubcribe{
-    position: relative;
-    color:rgb(193, 163, 98);
-    border: 2px solid rgb(193, 163, 98);
-    border-radius: 17px;
-    font-size: 12px;
-    width: 96px;
-    font-weight: 700;
-    margin-top: 9px;
-    padding: 0;
-    height: 24px;
-    margin-left: 18px;    
+.mainnav-mobile {
+  border: 2px solid aqua;
 }
-.subcribe{
-    color:rgb(193, 163, 98);
-    text-align: center;
+.mobile-top-nav {
+  display: flex;
+  /* margin-top: 1rem; */
 }
-.subcribe::before{
-content: "";
-position: absolute;
+.navjiocinema {
+  color: white;
+  font-weight: 750;
+  font-size: 18px;
+}
+.navsubcribe {
+  position: relative;
+  color: rgb(193, 163, 98);
+  border: 2px solid rgb(193, 163, 98);
+  border-radius: 17px;
+  font-size: 13px;
+  width: 96px;
+  font-weight: 700;
+  margin-top: 11px;
+  padding: 0;
+  height: 24px;
+}
+.subcribe {
+  color: rgb(193, 163, 98);
+  text-align: center;
+}
+.subcribe::before {
+  content: "";
+  position: absolute;
   width: 12px;
   height: 3px;
   left: 60px;
@@ -45,71 +52,133 @@ position: absolute;
   filter: blur(1px);
   background: rgb(255, 255, 255);
 }
-.subcribe::after{
-content: "";
+.subcribe::after {
+  content: "";
   position: absolute;
   top: -2px;
   width: 40px;
   height: 2px;
   left: 44px;
   border-radius: 30%;
-  background: linear-gradient(90deg, rgba(210, 196, 170, 0) 0%, rgb(255, 252, 244) 50.49%, rgba(226, 226, 226, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(210, 196, 170, 0) 0%,
+    rgb(255, 252, 244) 50.49%,
+    rgba(226, 226, 226, 0) 100%
+  );
 }
-.navforyou{
-    color: white;
-    border: 1.5px solid rgb(249,249, 249);
-    border-radius: 28px;
-    font-size: 14px;
-    font-weight: 700;
-    margin-left: 11px;
+.navforyou {
+  color: white;
+  border: 1.5px solid rgb(249, 249, 249);
+  border-radius: 28px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 11px;
 }
-.sport{
-    color: white;
-    margin-left: 13px;
-    font-size: 13px;
-    font-weight: 700;
+a.navforyou.nav-link {
+  color: white !important;
 }
-.movies{
-    color: white;
-    margin-left: 13px;
-    font-size: 13px;
-    font-weight: 700;
+.sport {
+  margin-left: 13px;
+  font-size: 13px;
+  font-weight: 700;
 }
-.news{
-    color: white;
-    margin-left: 13px;
-    font-size: 13px;
-    font-weight: 700;
+a.sport.nav-link {
+  color: white !important;
 }
-.tvshow{
-    color: white;
-    margin-left: 13px;
-    font-size: 13px;
-    font-weight: 700;
+.movies {
+  color: white;
+  margin-left: 13px;
+  font-size: 13px;
+  font-weight: 700;
 }
-.searchbar{
-    width: 250px;
-    border: 1px solid gray;
-    background-color:black;
-    border-radius: 20px;
-    font-weight: 600;
-    margin-left: 50px;
-   
+a.movies.nav-link {
+  color: white !important;
+}
+.news {
+  color: white;
+  margin-left: 13px;
+  font-size: 13px;
+  font-weight: 700;
+}
+a.news.nav-link {
+  color: white !important;
+}
+.tvshow {
+  color: white;
+  margin-left: 13px;
+  font-size: 13px;
+  font-weight: 700;
+}
+a.tvshow.nav-link {
+  color: white !important;
+}
+.searchbar {
+  width: 250px;
+  border: 1px solid gray;
+  background-color: black;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+.searchbar::placeholder {
+  color: lightgray;
+}
+.avtar {
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-right: 60px;
+  cursor: pointer;
+}
+.loginpage {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
 
-}
-.searchbar::placeholder{
-    color: lightgray;
-}
-.avtar{
-    border: 1px solid white;
-    margin-left: 10px;
-    margin-right:60px;   
-    cursor: pointer;
-}
-.loginpage{
+@media (max-width: 768px) {
+  .mobile-top-nav {
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .navjiocinema {
+    font-size: 14px;
+    margin-left: -10%;
+  }
+  .navjiocinema > img {
+    font-size: 16px;
+    margin-left: 0%;
+  }
+  .navsubcribe {
+    margin-left: -10px;
+    margin-bottom: 10px;
+  }
+  .searchbar {
+    display: none;
+  }
+  .avtar {
+    display: none;
+  }
+  .navfor-phonescreen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .mainnav-mobile {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Change the flex-direction to column */
+    align-items: center;
+    justify-content: flex-end; /* Align to the bottom */
+    position: fixed; /* Position the navigation at the bottom */
+    bottom: 0; /* Stick to the bottom of the screen */
+    left: 0;
+    right: 0; /* Stretch to the edges */
+    padding: 10px 0;
+  }
+  .mobilescreen {
+    display: block;
+  }
 }
-
-  

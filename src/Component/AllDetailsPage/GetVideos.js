@@ -13,19 +13,15 @@ function GetVideos() {
     try {
       let item = id;
       const Header = {
-        // "Content-Type": "application/json",
         Authorization:
           "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MGU1ZWYwZGJlZGNmNGY2MDIzOWIyNSIsImlhdCI6MTY5NTQ0MDYyNCwiZXhwIjoxNzI2OTc2NjI0fQ.YN3msPl6OFLpUM-ZYKeR0ONPb134QdlqQegDImvqCoc",
         projectID: "paln91dx5ibq",
       };
-      let addData = await fetch(
-        "https://academics.newtonschool.co/api/v1/ott/watchlist/like",
-        {
-          method: "PATCH",
-          headers: Header,
-          body: JSON.stringify(item),
-        }
-      );
+      let addData = await fetch(`${process.env.REACT_APP_WATCHLIST_URL}`, {
+        method: "PATCH",
+        headers: Header,
+        body: JSON.stringify(item),
+      });
 
       let response = await addData.json();
       console.log(response);

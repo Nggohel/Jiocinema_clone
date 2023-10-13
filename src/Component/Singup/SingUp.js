@@ -24,14 +24,11 @@ function SingUp() {
         "Content-Type": "application/json",
         projectID: "paln91dx5ibq",
       };
-      let getData = await fetch(
-        " https://academics.newtonschool.co/api/v1/user/signup",
-        {
-          method: "POST",
-          headers: Header,
-          body: JSON.stringify(item),
-        }
-      );
+      let getData = await fetch(`${process.env.REACT_APP_SINGUP_URL}`, {
+        method: "POST",
+        headers: Header,
+        body: JSON.stringify(item),
+      });
 
       let response = await getData.json();
       console.log(response);

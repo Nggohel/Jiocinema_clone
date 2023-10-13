@@ -12,7 +12,7 @@ function LandscapCarousel() {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?filter={"type": "${filterType}"}&limit=10`,
+          `${process.env.REACT_APP_GET_DATA_URL}?filter={"type": "${filterType}"}&limit=10`,
           {
             method: "GET",
             headers: {

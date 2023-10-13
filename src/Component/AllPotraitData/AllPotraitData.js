@@ -4,21 +4,19 @@ import "./AllPotraitData.css";
 
 function AllPotraitData() {
   const [data, setData] = useState({});
-  const [url, setUrl] = useState(
-    "https://academics.newtonschool.co/api/v1/ott/show"
-  );
-
-  const filterType = "movie";
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch(url + `?limit=100`, {
-          method: "GET",
-          headers: {
-            projectID: "paln91dx5ibq",
-          },
-        });
+        const response = await fetch(
+          `${process.env.REACT_APP_GET_DATA_URL}?limit=120`,
+          {
+            method: "GET",
+            headers: {
+              projectID: "paln91dx5ibq",
+            },
+          }
+        );
         const json = await response.json();
         console.log(json.data);
         setData(json.data);

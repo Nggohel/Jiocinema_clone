@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./AllLandsacpeData.css";
+
 function AllLandscapeData() {
   const [data, setData] = useState([]);
-  const filterType = "documentary";
 
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?limit=100`,
+          `${process.env.REACT_APP_GET_DATA_URL}?limit=120`,
           {
             method: "GET",
             headers: {

@@ -11,7 +11,7 @@ function HotRightNow() {
     async function fetchData() {
       try {
         const response = await fetch(
-          `https://academics.newtonschool.co/api/v1/ott/show?limit=11`,
+          `${process.env.REACT_APP_GET_DATA_URL}?limit=11`,
           {
             method: "GET",
             headers: {
