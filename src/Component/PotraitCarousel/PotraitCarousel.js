@@ -27,8 +27,8 @@ function PotraitCarousel() {
       }
     }
     fetchData();
-    console.log(process.env.REACT_APP_GET_DATA);
   }, []);
+  console.log(data);
   return (
     <>
       <div className="potraittitle">
@@ -52,16 +52,16 @@ function PotraitCarousel() {
         emulateTouch={false}
       >
         {data.length > 0 ? (
-          data.map((item, index) => (
-            <div className="potraitsimg" key={index}>
-              <a>
+          data?.map((item, index) => (
+            <Link to={`/details/${item._id}`}>
+              <div className="potraitsimg" key={index}>
                 <img
                   src={item.thumbnail}
                   alt={`Image ${index}`}
                   style={{ width: "100%", height: "100%" }}
                 />
-              </a>
-            </div>
+              </div>
+            </Link>
           ))
         ) : (
           <h5 style={{ color: "white" }}>Loading....</h5>

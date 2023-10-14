@@ -41,13 +41,13 @@ function AllLandscapeData() {
         {data.length > 0 ? (
           data.map((item, index) => (
             <div className="alllandscape-data" key={index}>
-              <a>
+              <Link to={`/details/${item._id}`}>
                 <img
                   className="alllandscape-img"
                   src={item.thumbnail}
                   alt={`Image ${index}`}
                 />
-              </a>
+              </Link>
             </div>
           ))
         ) : (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, json } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./LandscapCarousel.css";
@@ -52,15 +52,15 @@ function TrailerLandscapCarousel() {
       >
         {data.length > 0 ? (
           data.map((item, index) => (
-            <div className="landscape-img" key={index}>
-              <a>
+            <Link to={`/details/${item._id}`}>
+              <div className="landscape-img" key={index}>
                 <img
                   src={item.thumbnail}
                   alt={`Image ${index}`}
                   style={{ width: "100%", height: "100%" }}
                 />
-              </a>
-            </div>
+              </div>
+            </Link>
           ))
         ) : (
           <h2 style={{ color: "white" }}>Loading....</h2>

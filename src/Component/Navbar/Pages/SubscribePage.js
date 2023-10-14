@@ -4,7 +4,7 @@ function SubscribePage() {
   return (
     <>
       <CarouselCard />
-      <img src="images/Subscription-image.jpg" />
+      <img src="images/Subscription-image.jpg" style={{ marginTop: "-40px" }} />
     </>
   );
 }

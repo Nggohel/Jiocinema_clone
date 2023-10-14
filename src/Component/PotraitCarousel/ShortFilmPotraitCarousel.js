@@ -52,15 +52,15 @@ function ShortFilmPotraitCarousel() {
       >
         {data.length > 0 ? (
           data.map((item, index) => (
-            <div className="potraitsimg" key={index}>
-              <a>
+            <Link to={`/details/${item._id}`}>
+              <div className="potraitsimg" key={index}>
                 <img
                   src={item.thumbnail}
                   alt={`Image ${index}`}
                   style={{ width: "100%", height: "100%" }}
                 />
-              </a>
-            </div>
+              </div>
+            </Link>
           ))
         ) : (
           <h2 style={{ color: "white" }}>Loading....</h2>

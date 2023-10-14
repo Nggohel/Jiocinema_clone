@@ -1,10 +1,10 @@
 import React from "react";
-import CarouselCard from "../../Carousel/Carousel";
+import TvShowsCarousel from "../../Carousel/TvShowsCarousel";
 import PotraitCarousel from "../../PotraitCarousel/PotraitCarousel";
 function TvshowPage() {
   return (
     <>
-      <CarouselCard />
+      <TvShowsCarousel />
       <PotraitCarousel />
     </>
   );

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./HotRightNow.css";
@@ -47,15 +48,15 @@ function HotRightNow() {
       >
         {data.length > 0 ? (
           data.map((item, index) => (
-            <div className="hotrightnowimg" key={index}>
-              <a>
+            <Link to={`/details/${item._id}`}>
+              <div className="hotrightnowimg" key={index}>
                 <img
                   src={item.thumbnail}
                   alt={`Image ${index}`}
                   style={{ width: "100%", height: "100%" }}
                 />
-              </a>
-            </div>
+              </div>
+            </Link>
           ))
         ) : (
           <h2 style={{ color: "white" }}>Loading....</h2>

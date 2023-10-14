@@ -1,10 +1,10 @@
 import React from "react";
-import CarouselCard from "../../Carousel/Carousel";
+import SpotsCarousel from "../../Carousel/SpotsCarousel";
 import PotraitCarousel from "../../PotraitCarousel/PotraitCarousel";
 function SportPage() {
   return (
     <>
-      <CarouselCard />
+      <SpotsCarousel />
       <PotraitCarousel />
     </>
   );

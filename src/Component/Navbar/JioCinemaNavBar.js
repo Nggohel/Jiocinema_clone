@@ -107,7 +107,6 @@ function JioCinemaNavBar() {
           onClick={handleAvatarClick}
         />
       </Navbar>
-      {/* {expand ? <LoginPage /> : ""} */}
 
       <Navbar expand="lg" className="mobilescreen">
         <Container>
@@ -149,17 +148,6 @@ function JioCinemaNavBar() {
             </Nav>
           </Navbar>
         </Container>
-        {/* <Row>
-          <Col xs="auto">
-            <Form.Control
-              type="text"
-              placeholder="Search"
-              className=" mr-sm-2 searchbar from"
-              value={searchValue}
-              onChange={handleSearchChange}
-            />
-          </Col>
-        </Row> */}
       </Navbar>
       {expand ? <LoginPage /> : ""}
     </>
