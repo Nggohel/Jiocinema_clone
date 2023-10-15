@@ -45,4 +45,12 @@
   .allportrait-name {
     font-size: 20px;
   }
+  .allportrait-card {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    padding: 10px 10px;
+    column-gap: -2.5px;
+    row-gap: 15px;
+  }
 }

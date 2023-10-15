@@ -16,6 +16,7 @@ import Details from "../AllDetailsPage/Details";
 import Searchpage from "./Pages/Searchpage";
 import GetVideos from "../AllDetailsPage/GetVideos";
 import WatchList from "../WatchList/WatchList";
+import MobileSearchPage from "../MobileSearch/MobileSearch";
 function MainNavigation() {
   return (
     <>
@@ -31,6 +32,8 @@ function MainNavigation() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/search/:query" element={<Searchpage />} />
           <Route path="/search" element={<PotraitCard />} />
+          <Route path="/mobilesearch" element={<MobileSearchPage />} />
+          <Route path="/mobilesearch/:query" element={<Searchpage />} />
           <Route path="/Moredatapotrait" element={<PotraitCard />} />
           <Route path="/backtohome" element={<HomePage />} />
           <Route path="/Moredatalandscape" element={<LandscapeCard />} />

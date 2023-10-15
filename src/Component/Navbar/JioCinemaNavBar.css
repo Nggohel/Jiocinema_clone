@@ -140,6 +140,7 @@ a.tvshow.nav-link {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 30px;
   }
   .navjiocinema {
     font-size: 14px;
@@ -153,9 +154,7 @@ a.tvshow.nav-link {
     margin-left: -10px;
     margin-bottom: 10px;
   }
-  /* .avtar {
-    display: none;
-  } */
+
   .navfor-phonescreen {
     display: flex;
     flex-direction: row;
@@ -183,5 +182,10 @@ a.tvshow.nav-link {
   }
   .navsubcribe {
     padding: 3px;
+  }
+  .mobile-search-icon {
+    padding: 0px 50px;
+    margin-left: 100px;
+    cursor: pointer;
   }
 }

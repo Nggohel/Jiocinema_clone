@@ -29,6 +29,7 @@
   width: 14rem;
   border-radius: 10px;
   object-fit: cover;
+  border: 2px solid rgba(255, 217, 0, 0.664);
 }
 
 .alllandscape-name {
@@ -42,5 +43,12 @@
   }
   .alllandscape-name {
     font-size: 20px;
+  }
+  .alllandscape-card {
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    padding: 10px 0px;
+    row-gap: 15px;
   }
 }

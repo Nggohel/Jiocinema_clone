@@ -41,6 +41,10 @@ function JioCinemaNavBar() {
   //   }
   // };
 
+  // const handleSearchIcon = (e) => {
+  //   navigate(`/mobilesearch`);
+  // };
+
   // have to check
   useEffect(() => {
     if (expand) {
@@ -84,7 +88,6 @@ function JioCinemaNavBar() {
               News
             </Nav.Link>
           </Nav>
-          {/* </Navbar> */}
         </Container>
         <Row>
           <Col xs="auto">
@@ -117,6 +120,17 @@ function JioCinemaNavBar() {
             </Nav.Link>
             <Nav.Link as={Link} to="/subscribe" className="navsubcribe">
               <p className="subcribe">Subcribe</p>
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/mobilesearch"
+              className="mobile-search-icon"
+            >
+              <img
+                src="images/downloadsearch-icon.png"
+                alt="search-icon-mobile"
+                // onClick={handleSearchIcon}
+              />
             </Nav.Link>
           </div>
           <Navbar className="mainnav-mobile">

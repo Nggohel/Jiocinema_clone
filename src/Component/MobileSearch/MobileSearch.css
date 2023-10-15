@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .searchbar {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    margin-left: 18px;
+  }
+}

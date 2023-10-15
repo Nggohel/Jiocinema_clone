@@ -35,9 +35,7 @@ function AllPotraitData() {
             <img className="allportrait-icon" src="images/left-side.png" />
           </button>
         </Link>
-        <h4 className="allportrait-name">
-          All Options....details work done here
-        </h4>
+        <h4 className="allportrait-name">All Options.... </h4>
       </div>
 
       <div className="allportrait-card">
