@@ -56,10 +56,7 @@ function JioCinemaNavBar() {
 
   return (
     <>
-      <Navbar
-        expand="lg"
-        className={expand ? "mainnav expanded" : "mainnav lapton-screen"}
-      >
+      <Navbar expand="lg" className={expand ? "mainnav" : " lapton-screen"}>
         <Container className="">
           <div className="">
             <Nav.Link as={Link} to="/" className="navjiocinema">
@@ -111,7 +108,7 @@ function JioCinemaNavBar() {
         />
       </Navbar>
 
-      <Navbar expand="lg" className="mobilescreen">
+      <Navbar expand="lg" className={expand ? "mobilescreen" : ""}>
         <Container>
           <div className="mobile-top-nav">
             <Nav.Link as={Link} to="/" className="navjiocinema">
@@ -129,10 +126,10 @@ function JioCinemaNavBar() {
               <img
                 src="images/downloadsearch-icon.png"
                 alt="search-icon-mobile"
-                // onClick={handleSearchIcon}
               />
             </Nav.Link>
           </div>
+
           <Navbar className="mainnav-mobile">
             <Nav className="me-auto navfor-phonescreen">
               <Nav.Link as={Link} to="/foryou" className="navforyou">
