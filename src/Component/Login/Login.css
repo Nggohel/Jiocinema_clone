@@ -1,58 +1,53 @@
-.login-page{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-    
+.login-page {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 31vw;
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 31vw;
 }
-.login-button{
-    background-color: black;
-    border: none;
+.login-button {
+  background-color: black;
+  border: none;
 }
-.login-button-image{
-background-color: black;
-height: 25px;
-width: 23px;
-transform: rotate(90deg);
-margin-right: 10px;
+.login-button-image {
+  background-color: black;
+  height: 25px;
+  width: 23px;
+  transform: rotate(90deg);
+  margin-right: 10px;
 }
-.login-number{
-    font-size: 15px;
-    
+.login-number {
+  font-size: 15px;
 }
-.login-number-input{
-   margin-top: 30px;
-   background-color: black;
-   border: none;
-   color: darkgray;
-   border-bottom: 2px solid rgb(232, 66, 121) ;
-   width: 30vw;
-
+.login-number-input {
+  margin-top: 30px;
+  background-color: black;
+  border: none;
+  color: darkgray;
+  border-bottom: 2px solid rgb(232, 66, 121);
+  width: 30vw;
 }
 
-.login-continue-btn{
-    background-color:rgb(243, 65, 125);
-    color: white;
-    width: 30%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin: 1rem 0;
+.login-continue-btn {
+  background-color: rgb(243, 65, 125);
+  color: white;
+  width: 30%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0;
 }
-.login-para{
-    color: white;
-    font-weight: 400;
-    
+.login-para {
+  color: white;
+  font-weight: 400;
 }
 
-.logindetails{
-    color:rgb(220, 29, 92) ;
+.logindetails {
+  color: rgb(220, 29, 92);
 }

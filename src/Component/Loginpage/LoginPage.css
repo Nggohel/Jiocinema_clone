@@ -143,5 +143,33 @@ h6 {
   .parentcard {
     width: 100vw;
     height: 100vh;
+    right: -100vw;
+    height: 90vh;
+    background-color: black;
+    animation-name: Mobilemove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .moved {
+    right: 0;
+    animation-name: Mobileback;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes Mobileback {
+    from {
+      right: 0;
+    }
+    to {
+      right: -100vw;
+    }
+  }
+  @keyframes Mobilemove {
+    from {
+      right: -100vw;
+    }
+    to {
+      right: 0;
+    }
   }
 }
