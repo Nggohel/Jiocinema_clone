@@ -1,4 +1,4 @@
-.mobilescreen {
+.mainnav-mobile {
   display: none;
 }
 .jiocinema-logo {
@@ -176,15 +176,17 @@ a.tvshow.nav-link {
     display: block;
   }
   .lapton-screen {
-    display: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
   .navsubcribe {
     padding: 3px;
   }
   .mobile-search-icon {
-    padding: 0px 50px;
-    margin-left: 100px;
+    margin-top: -48px;
     cursor: pointer;
+    margin-left: 91%;
   }
   .avtar {
     margin-right: -5px;

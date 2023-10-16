@@ -61,6 +61,7 @@ function PotraitCarousel() {
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
+              {console.log(item.thumbnail)}
             </Link>
           ))
         ) : (
@@ -72,4 +73,3 @@ function PotraitCarousel() {
 }
 
 export default PotraitCarousel;
-// screen size get js me
