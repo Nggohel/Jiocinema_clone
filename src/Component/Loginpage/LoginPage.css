@@ -140,11 +140,10 @@ h6 {
   margin-right: 0.5rem;
 }
 @media (max-width: 768px) {
-  .parentcard {
+  /* .parentcard {
+    right: -100vw;
     width: 100vw;
     height: 100vh;
-    right: -100vw;
-    height: 90vh;
     background-color: black;
     animation-name: Mobilemove;
     animation-duration: 1s;
@@ -156,7 +155,7 @@ h6 {
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
-  @keyframes Mobileback {
+  @keyframes mobileback {
     from {
       right: 0;
     }
@@ -164,12 +163,12 @@ h6 {
       right: -100vw;
     }
   }
-  @keyframes Mobilemove {
+  @keyframes mobilemove {
     from {
       right: -100vw;
     }
     to {
       right: 0;
     }
-  }
+  } */
 }
