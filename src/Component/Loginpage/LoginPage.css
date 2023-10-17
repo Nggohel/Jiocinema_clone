@@ -140,35 +140,30 @@ h6 {
   margin-right: 0.5rem;
 }
 @media (max-width: 768px) {
-  /* .parentcard {
-    right: -100vw;
-    width: 100vw;
-    height: 100vh;
+  .loginpagelayout {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: black;
-    animation-name: Mobilemove;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+    transition: transfrom 1s;
   }
   .moved {
-    right: 0;
-    animation-name: Mobileback;
+    transform: translateX(100%);
+    animation-name: back;
     animation-duration: 1s;
     animation-fill-mode: forwards;
   }
-  @keyframes mobileback {
-    from {
-      right: 0;
-    }
-    to {
-      right: -100vw;
-    }
+  .parentcard {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
-  @keyframes mobilemove {
-    from {
-      right: -100vw;
-    }
-    to {
-      right: 0;
-    }
-  } */
 }
