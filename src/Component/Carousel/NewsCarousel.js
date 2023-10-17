@@ -51,11 +51,6 @@ function NewsCarousel() {
         <div>
           <h3 style={{ color: "white" }}>MEIN, MEHMOOD</h3>
           <p style={{ color: "darkgray" }}>Hindi Drama U/A 7+</p>
-          <p style={{ color: "white" }}>
-            <Button variant="primary" className="watchbutton">
-              WATCH
-            </Button>
-          </p>
         </div>
       </div>
       <div className="main-carouselimage">
@@ -67,11 +62,6 @@ function NewsCarousel() {
             Sautrashtra vs Rest of India,Day 3
           </h3>
           <p style={{ color: "white" }}></p>
-          <p style={{ color: "white" }}>
-            <Button variant="primary" className="watchbutton">
-              WATCH
-            </Button>
-          </p>
         </div>
       </div>
       <div className="main-carouselimage">
@@ -81,11 +71,6 @@ function NewsCarousel() {
         <div>
           <h3 style={{ color: "white" }}>Rat In The Kitchen</h3>
           <p style={{ color: "white" }}>Hindi Thriller U/A 13+</p>
-          <p style={{ color: "white" }}>
-            <Button variant="primary" className="watchbutton">
-              WATCH
-            </Button>
-          </p>
         </div>
       </div>
       <div className="main-carouselimage">
@@ -95,11 +80,6 @@ function NewsCarousel() {
         <div>
           <h3 style={{ color: "white", fontSize: 35 }}>FC Goa 1-0 Punjab FC</h3>
           <p style={{ color: "white" }}></p>
-          <p style={{ color: "white" }}>
-            <Button variant="primary" className="watchbutton">
-              WATCH
-            </Button>
-          </p>
         </div>
       </div>
     </Carousel>

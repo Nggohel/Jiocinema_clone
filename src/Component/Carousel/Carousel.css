@@ -65,10 +65,6 @@ p {
 .watchbutton:hover {
   background-color: rgba(217, 0, 141, 0.704);
 }
-/* .control-dots {  
-    margin-bottom: 50px;
-    display: block;  
-} */
 @media (max-width: 768px) {
   .main-carouselimage {
     display: flex;
@@ -97,9 +93,7 @@ p {
     object-fit: cover;
     width: 412px;
   }
-  .carousel .control-next.control-arrow {
-    /* right: 13%; */
-  }
+
   h3 {
     font-size: 15px;
   }
